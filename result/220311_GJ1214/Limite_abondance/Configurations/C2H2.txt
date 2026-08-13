@@ -1,0 +1,27 @@
+Configuration utilisée :
+
+    tab_kp = np.arange(-150, 152, 2)        # en km/s, grille d'ecarts autour du Kp connu
+    tab_vsys = np.arange(-60, 62, 2)        # en km/s, grille d'ecarts autour du Vsys connu
+    seuil_decallage = 3.0                   # masque_decallage : masque les raies qui se décalent entre les prises A et B
+    propagation_erreurs = False             # propager_erreur : propage rigoureusement l'effet de la PCA sur les erreurs recues dans le .pickel
+    elargissement_rotationnel = True        # spectre_pRT_to_CRIRES : applique l'elargissement rotationnel au template (profil de Gray, rotation supposee synchrone)
+    abondance = 0.001                       # spectre_transmission : fraction massique (mass_fraction) de la molecule recherchee dans l'atmosphere
+
+    pourcentage_bas = 5                     # masquage tellurique : profondeur minimale masquee
+    pourcentage_haut = 60                   # masquage tellurique : profondeur maximale masquee
+    largeur_voisinage = 20                  # masquage tellurique : largeur du voisinage etendu autour des raies profondes
+    r_max = 2                               # pca_3D_to_4D : nombre de composantes PCA retirees (bruit/tellurique residuel)
+    supprimer_continum = True               # spectre_pRT_to_CRIRES : retire le continuum du template avant correlation
+    facteur_continum = 10                   # spectre_pRT_to_CRIRES : largeur de la convolution utilisee pour retirer le continuum
+    supprimer_mediane = False               # correlation_croisee : retire la mediane de la CCF (par vitesse) avant de sommer
+    largeur_exclusion = 15                  # somme_to_zscore : demi-largeur exclue autour du Vsys testé pour estimer le bruit local
+
+Paramètres d'appel :
+
+    planete = GJ 1214 b
+    fichier = 220311_GJ1214
+    element = C2H2
+    seuil_sigma = 5.0
+    abondance_min = 1e-08
+    abondance_max = 0.1
+    tolerance_log = 0.05

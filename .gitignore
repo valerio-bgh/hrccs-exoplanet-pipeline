@@ -1,0 +1,24 @@
+# Environnement virtuel
+venv/
+
+
+data/*.pickle
+!data/220311_GJ1214.pickle
+
+result/*
+!result/220311_GJ1214/
+!result/GJ1214_b_fusionne/
+
+# Clone local de ldtk (a son propre .git, ne pas vendorer — installer via pip install ldtk)
+ldtk/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
