@@ -34,7 +34,7 @@ La méthode : PCA (SVD) pour retirer les systématiques temporelles, corrélatio
 
 ## Installation
 
-Le projet utilise un environnement virtuel `venv/` (déjà présent à la racine). Pour l'activer :
+Le projet utilise un environnement virtuel `venv/`, à créer après le clonage (`python -m venv venv`). Pour l'activer :
 
 ```bash
 source venv/bin/activate
@@ -318,7 +318,7 @@ choisi librement, indépendant des fichiers d'entrée fusionnés).
 
 Certains réglages (`TAB_KP`, `TAB_VSYS`, `SEUIL_DECALLAGE`, `PROPAGATION_ERREURS`, `ELARGISSEMENT_ROTATIONNEL`,
 `ABONDANCE`...) ne sont pas optimisés automatiquement : ce sont des constantes fixes à ajuster directement en tête
-du fichier `src/calibration.py`, dans sa section "Parametres de pipline" — voir aussi la colonne "réglé dans
+du fichier `src/calibration.py`, dans sa section "Paramètres de pipeline" — voir aussi la colonne "réglé dans
 `src/calibration.py`" du [tableau de configuration](#le-dictionnaire-de-configuration).
 
 `calibration()` part d'une configuration de départ (`DEPART`) et ajuste successivement chaque paramètre en le
