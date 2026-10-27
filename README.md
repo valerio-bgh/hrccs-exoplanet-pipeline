@@ -1,3 +1,6 @@
+## Overview (English)
+End-to-end Python pipeline for High-Resolution Cross-Correlation Spectroscopy (HRCCS): starting from reduced CRIRES+ spectra, it removes stellar and telluric systematics (PCA/SVD), cross-correlates the residuals with petitRADTRANS templates, and builds Kp–Vsys significance maps. Includes injection–recovery tests, automatic calibration of 8 free parameters, and abundance upper limits. Example data: public GJ 1214 b observations (Nortmann et al. 2026, CC-BY-4.0). Full documentation below is in French.
+
 # Pipeline HRCCS — détection moléculaire dans les atmosphères d'exoplanètes en transit
 
 Pipeline de spectroscopie à corrélation croisée haute résolution (HRCCS) pour détecter la présence d'une molécule
